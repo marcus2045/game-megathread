@@ -1,0 +1,124 @@
+:root {
+    --bg: #0b0c10;
+    --bg-alt: #1f2833;
+    --accent: #66fcf1;
+    --accent-soft: #45a29e;
+    --text: #c5c6c7;
+    --text-strong: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background: linear-gradient(135deg, #0b0c10, #1f2833);
+    padding: 1.5rem;
+    border-bottom: 1px solid #14181f;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 1rem;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #222831;
+    background: #14181f;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+/* Section Titles */
+section h2 {
+    color: var(--text-strong);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+}
+
+.game-card {
+    background: var(--bg-alt);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #14181f;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.game-title {
+    font-size: 1rem;
+    color: var(--text-strong);
+    font-weight: 600;
+}
+
+.game-meta {
+    font-size: 0.75rem;
+    color: #9da1a5;
+}
+
+.tag-row {
+    margin: 0.4rem 0;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
+    background: #14181f;
+    border: 1px solid #222831;
+}
+
+.tag.highlight {
+    border-color: var(--accent-soft);
+    color: var(--accent-soft);
+}
+
+.links a {
+    color: var(--accent);
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.notes {
+    font-size: 0.75rem;
+    color: #aeb3b8;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.75rem;
+    color: #7b8086;
+}
